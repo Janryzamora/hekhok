@@ -1,0 +1,338 @@
+@font-face{
+	font-family: madimi;
+	src: url(Fonts/MadimiOne-Regular.ttf);
+}
+@font-face{
+	font-family: cherry;
+	src: url(Fonts/CherryBombOne-Regular.ttf);
+}
+
+body {
+  background-color: #222222;
+/*  overflow: hidden;*/
+}
+
+header{
+	opacity: 0.9;
+	top: -7px;
+	left: 0px;
+/*	position: fixed;*/
+	background-color: #222222; /*#525050*/
+	height: 65px;
+	width: 100%;
+	text-align: center;
+}
+
+#ig{
+	position: absolute;
+	top: 20px;	
+	right: 110px;
+}
+#x{
+	position: absolute;
+	top: 20px;	
+	right: 160px;
+}
+#fb{
+	position: absolute;
+	top: 20px;	
+	right: 210px;
+}
+
+#menuButton{
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	transition: 0.2s;
+}
+
+#menuButton:hover{
+	transform: scale(1.2);
+}
+
+
+
+#searchBar{
+	width: max-content;
+	display: inline-flex;
+	align-items: center;
+	padding: 14px;
+	border-radius: 28px;
+	background: #f6f6f6;
+	width: 750px;
+	height: 5px;
+	position: absolute;
+	top: 20px;
+	right: 290px;
+}
+input{
+	font-size: 16px;
+	font-family: arial;
+	color: #333333;
+	margin-left: 12px;
+	outline: none;
+	border: none;
+	background: transparent;
+	flex: 1;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    -webkit-appearance: none;
+    }
+
+#logo{
+	color: white;
+	font-family: madimi;
+	font-size: 70px;
+	text-align: center;
+	margin-top: -50px;
+}
+
+#animation{
+	text-align: center;
+	margin-top: -80px;
+}
+
+
+
+
+
+/*drop down menu =================================*/
+#profile-container{
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	width: 250px;
+
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.2s;
+}
+
+#profile-container.open-menu{
+	max-height: 400px;
+}
+
+#profile{
+	background-color: white;
+	padding: 10px;
+	padding-left: 15px;
+	border-radius: 5px;
+	opacity: 1;
+}
+
+#profile-info{
+	display: flex;
+	align-items: center;
+	font-family: madimi;
+}
+
+#profile-info img{
+	margin-right: 10px;
+}
+
+#profile hr{
+	border: 0;
+	height: 1px;
+	width: 100%;
+	background-color: #ccc;
+}
+
+.profile-link{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	margin: -5px 0;
+	font-family: madimi;
+	color: #ccc;
+	padding-right: 10px;
+}
+
+.profile-link p{
+	width: 100%;
+}
+
+.profile-link img{
+	margin-right: 15px;
+} 
+
+.profile-link span{
+	font-size: 22px;
+	transition: transfotm 0.5s;
+}
+
+.profile-link:hover span{
+	transform: translateX(6px);
+	color: black;
+}
+
+.profile-link:hover p{
+	color: black;
+}
+
+.log-up, .or{
+	display: inline-flex;
+	text-align: center;
+	text-decoration: underline;
+	color: black;
+	font-family: madimi;
+}
+
+.or{
+	text-decoration: none;
+	margin: 0 7px
+}
+
+
+/*list of items in card =================================*/
+
+#sword-header{
+	color: white;
+	font-family: madimi;
+	font-size: 20px;
+	margin-top: 300px;
+	display: flex;
+	justify-content: center;
+}
+
+.card-container{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+/*	background-color: white;*/
+}
+
+.card{
+	width: 150px;
+	height: 250px;
+	background-color: #F6F5F3;
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 20px;
+	font-family: madimi;
+	transition: 0.2s;
+}
+
+.card:hover{
+	transform: scale(1.1);
+}
+
+.card img{
+	border-radius: 4px;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 128px;
+	height: 128px;
+}
+
+.card-content{
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+.card-content h3{
+	font-size: 15px;
+}
+
+.card-content h2{
+	color: #F57224;
+	margin-top: -15px;
+	font-size: 15px;
+}
+
+.card-content .btn{
+	margin-top: -20px;
+	display: inline-block;
+	padding: 2px 8px;
+	background-color: #F57224;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+
+
+
+
+/*Header Title of every Items =================================*/
+
+#sword{
+	font-family: madimi;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 300px;
+}
+
+#sword h3{
+	color: #222222;
+}
+
+#spada{
+	margin-top: -30px;
+}
+
+
+
+
+
+
+/*Left menu button for the image button =================================*/
+
+#left-menu-button{
+	position: absolute;
+	top: -15px;
+	left: -5px;
+	position: fixed;
+}
+
+#left-menu-button img{
+	transition: 0.1s;
+}
+
+#left-menu-button img:hover{
+	transform: scale(1.3);
+}
+
+
+/*category icons =================================*/
+#image-container{
+	position: absolute;
+	top: 90px;
+	left: 20px;
+	color: #222222;
+	position: fixed;
+
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.2s;
+}
+
+#image-container.open-menu{
+	max-height: 600px;
+}
+
+
+
+
+.image-button{
+	height: 50px;
+	width: 50px;
+	background-color: #141c1c;
+	border: 3px solid black;
+	border-radius: 5px;
+	margin: 5px;
+	margin-bottom: 7px;
+/*	float: left;*/
+	transition: 0.2s;
+}
+
+.image-button:hover{
+	transform: scale(1.2);
+	color: #9cfffa;
+}
+
+
+
+
